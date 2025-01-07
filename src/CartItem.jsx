@@ -38,7 +38,7 @@ const handleDecrement = (item) => {
   };
 
   const handleCheckoutShopping = (e) => {
-  alert('Functionality to be added at a later date');
+  alert('Coming Soon!');
 };
 
   // Calculate total cost based on quantity for an item
