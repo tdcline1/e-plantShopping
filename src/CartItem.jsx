@@ -38,7 +38,7 @@ const handleDecrement = (item) => {
   };
 
   const handleCheckoutShopping = (e) => {
-  alert('Functionality to be added for future reference');
+  alert('Functionality to be added at a later date');
 };
 
   // Calculate total cost based on quantity for an item
@@ -72,7 +72,7 @@ const handleDecrement = (item) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button className="get-started-button1" onClick={handleCheckoutShopping}>Checkout</button>
       </div>
     </div>
   );
