@@ -295,12 +295,11 @@ const handleAddToCart = (product) => {
                         {/*Similarly like the above plant.name show other details like description and cost*/}
                         <div className="product-title">{plant.cost}</div>
                         <button
-                          className="product-button"
-                          style={addedToCart[plant.name] ? styleDisabledButton : {}}
-                          disabled={addedToCart[plant.name]} // Disable if added to cart
-                          onClick={() => handleAddToCart(plant)}
-                        >
-                          {addedToCart[plant.name] ? "Added to Cart" : "Add to Cart"}
+                            className="product-button"
+                            onClick={() => handleAddToCart(plant)}
+                            disabled={addedToCart[plant.name]} // Disable button if product is added
+                            >
+                            {addedToCart[plant.name] ? 'Added to Cart' : 'Add to Cart'}
                         </button>
                     </div>
                     ))}
