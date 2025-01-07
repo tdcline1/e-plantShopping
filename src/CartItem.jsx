@@ -43,6 +43,8 @@ const handleDecrement = (item) => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
+    const itemCost = parseFloat(item.cost.replace('$', '')); // Remove the dollar sign and convert to float
+    return itemCost * item.quantity; // Subtotal: cost * quantity
   };
 
   return (
